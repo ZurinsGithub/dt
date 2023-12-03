@@ -1,0 +1,26 @@
+.round{
+    border-radius: 25px;
+}
+
+.father_content{
+    // 默认的内容div样式，可在此基础上修改
+	margin: 4vh 2vw;
+	width: 96vw;
+	min-width: 250px;
+	max-width: 960px;
+	height: 86vh;
+	min-height: 400px;
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+	transition: background-color 0.5s;
+}
+
+.father_content_theme_light{
+	@extend .father_content;
+	background-color: rgb(255,255,255,0.7);
+}
+
+.father_content_theme_dark{
+	@extend .father_content;
+	background-color: rgba(0, 0, 0, 0.7);
+}

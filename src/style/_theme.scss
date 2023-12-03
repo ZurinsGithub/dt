@@ -1,0 +1,43 @@
+@mixin bg-dark{
+    background-image: url("../static/bg2.jpg");
+}
+@mixin bg-light{
+    background-image: url("../static/bg_light.jpg");
+}
+@mixin bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.theme{
+    @include bg;
+    transition: background-image 0.5s;
+}
+
+.theme_dark {
+    @extend .theme;
+    color: aliceblue;
+    @include bg-dark;
+}
+.theme_light {
+    @extend .theme;
+    color: black;
+    @include bg-light;
+}
+
+// 普通实心面板的明暗配色
+.panel{
+    transition: background-color 0.5s;
+}
+.panel_theme_light{
+    @extend .panel;
+    color: #000;
+    background-color: #fff;
+}
+.panel_theme_dark{
+    @extend .panel;
+    color: #ffffffa5;
+    background-color: #000;
+}
