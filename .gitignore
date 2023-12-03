@@ -19,3 +19,6 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+src/static/bg2_ignore.jpg
+src/uni_modules/*

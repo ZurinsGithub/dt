@@ -41,7 +41,7 @@ export default {
     // #endif
     },
     getFatherTheme() {
-    // #ifdef WEB
+    // #ifdef WEB  
       return "father_content_" + style.theme;
     // #endif
     // #ifdef MP_WEIXIN
