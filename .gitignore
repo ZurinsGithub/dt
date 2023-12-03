@@ -21,4 +21,4 @@ dist
 *.sw?
 
 src/static/bg2_ignore.jpg
-src/uni_modules/*
+src/uni_modules
